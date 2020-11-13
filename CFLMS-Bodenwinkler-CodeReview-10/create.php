@@ -9,30 +9,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Create Entry - BigLibrary</title>
+    <title>Add an Entry - BigLibrary</title>
+    <style>
+    #logoImg {
+        width: 30px;
+    }
+
+    .btn {
+        border-radius: 15px;
+    }
+
+    #buttonBox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #createID {
+        border: solid lightgray 3px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #headingId {
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+    </style>
 </head>
 
 <body>
     <!-- Header Navbar -------------------------------------------------------------------------------->
     <header>
-        <!-- As a heading -->
-        <nav class="navbar bg-dark" style="color:white">
-            <span class="navbar-brand mb-0 h1"> BigLibrary - Create Entry</span>
-        </nav>
+        <ul class="nav justify-content-center bg-dark">
+            <li class="nav-item py-3">
+                <a class="nav-link" href="index.php"><h4 style="color:white">Homepage</h4></a>
+            </li>
+            <li class="nav-item py-3 px-3">
+                <a class="nav-link active" href="index.php"><img id="logoImg" src="img/logo.png" alt=""></a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link" href="create.php"><h4 style="color:white">Create-Entry</h4></a>
+            </li>
+        </ul>
     </header>
 
+    <!-- Heading for the Create Site -->
+    <h3 id="headingId">Create Entry</h3>
+    <hr>
+
     <!-- Form for User to insert Data to send it to Server ------------------------------------------->
-    <div class="container mt-3">
+    <div class="container mt-4" id="createID">
         <form action="actions/a_create.php" method="post">
             <table>
                 <!-- Input Of Media Data -->
                 <tr>
                     <th> Author First Name: </th>
-                    <td><input size="50" type="text" name="author_first_name" placeholder="First Name of Author..." /></td>
+                    <td><input size="50" type="text" name="author_first_name" placeholder="First Name of Author..." />
+                    </td>
                 </tr>
                 <tr>
                     <th> Author Last Name: </th>
-                    <td><input size="50" type="text" name="author_last_name" placeholder="Last Name of Author..." /></td>
+                    <td><input size="50" type="text" name="author_last_name" placeholder="Last Name of Author..." />
+                    </td>
                 </tr>
                 <tr>
                     <th> Publisher Name: </th>
@@ -40,7 +79,8 @@
                 </tr>
                 <tr>
                     <th> Address of Publisher: </th>
-                    <td><input size="50" size="50" type="text" name="pub_address" placeholder="Publisher Address..." /></td>
+                    <td><input size="50" size="50" type="text" name="pub_address" placeholder="Publisher Address..." />
+                    </td>
                 </tr>
                 <tr>
                     <th> Date of Publication: </th>
@@ -76,7 +116,7 @@
                 </tr>
 
             </table>
-            <div class="mt-3">
+            <div class="mt-3" id="buttonBox">
                 <!-- Button to Submit Input Data to a_create.php -->
                 <button type="submit" class="btn btn-primary"> Send Media Data </button>
 

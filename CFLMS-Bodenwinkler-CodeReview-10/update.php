@@ -31,20 +31,50 @@
             width:100px;
             height:auto;
         }
+        #logoImg {
+            width:30px;
+        }
+        .btn {
+            border-radius:15px;
+        }
+        #updateID {
+            border: solid lightgray 3px;
+            padding: 30px;
+            display:flex;
+            justify-content:center;
+        }
+        #buttonBox {
+            display:flex;
+            justify-content: space-between;
+        }
+        #headingId {
+            text-align:center;
+            margin: 20px 0 20px 0;
+        }
     </style>
 </head>
 
 <body>
     <!-- Header Navbar -------------------------------------------------------------------------------->
     <header>
-        <!-- As a heading -->
-        <nav class="navbar bg-dark" style="color:white">
-            <span class="navbar-brand mb-0 h1">BigLibrary - Update Form</span>
-        </nav>
+        <ul class="nav justify-content-center bg-dark">
+            <li class="nav-item py-3">
+                <a class="nav-link" href="index.php"><h4 style="color:white">Homepage</h4></a>
+            </li>
+            <li class="nav-item py-3 px-3">
+                <a class="nav-link active" href="index.php"><img id="logoImg" src="img/logo.png" alt=""></a>
+            </li>
+            <li class="nav-item py-3">
+                <a class="nav-link" href="create.php"><h4 style="color:white">Create-Entry</h4></a>
+            </li>
+        </ul>
     </header>
-
-    <!-- Show All Content, to-CREATE to-EDIT, to-DELETE, to-Show-SPECIFIC ----------------------------->
-    <div class="container mt-3">
+    
+    <!-- Heading for the Update Site -->
+    <h3 id="headingId">Update Chosen Entry</h3>
+    <hr>
+    <!-- Show given Content - Set it into right inputBoxes for editing -->
+    <div class="container mt-4" id="updateID">
         <form action="actions/a_update.php" method="post">
             <table>
                 <tr>
@@ -96,7 +126,7 @@
                     <td> <input size="50" type="text" name="med_status" placeholder="available or reserved" value="<?php echo $data['med_status'] ?>" /> </td>
                 </tr>
             </table>
-                <div class="mt-3">
+                <div class="mt-3" id="buttonBox">
                     <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
                     <td><button  class="btn btn-primary" type="submit"> Save Changes </button></td>
                     <td><a href="index.php"><button class="btn btn-secondary" type="button">Back</button></a></td>
