@@ -2,9 +2,9 @@
 
 ### CFLMS-Bodenwinkler-CodeReview-10:
 ```
-Contains the .php files alongside the actions folder.
+Contains the .php files alongside the 'actions' folder.
 
-Additionally there is a img folder for the Logo used in the Website.
+Additionally there is a 'img' folder for the Logo used in the Website.
 ```
 
 
