@@ -1,0 +1,17 @@
+CREATE  TABLE `cr10-bodenwinkler-biglibrary`.`media` (
+`id`  INT(11) NOT NULL AUTO_INCREMENT,
+`author_first_name` VARCHAR(255) NOT NULL ,
+`author_last_name` VARCHAR(255) NOT  NULL,
+`pub_name` VARCHAR(255) NOT  NULL,
+`pub_address` VARCHAR(255) NOT  NULL,
+`pub_date` DATE NOT  NULL,
+`pub_size` VARCHAR(255) NOT  NULL,
+`med_title` VARCHAR(255) NOT  NULL,
+`med_image` VARCHAR(255) NOT  NULL,
+`med_type` VARCHAR(255) NOT  NULL,
+`isbn` VARCHAR(255) NOT  NULL,
+`short_desc` VARCHAR(255) NOT  NULL,
+`med_status` VARCHAR(255) NOT  NULL,
+`active` int(1) NOT NULL DEFAULT '0' ,
+PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
