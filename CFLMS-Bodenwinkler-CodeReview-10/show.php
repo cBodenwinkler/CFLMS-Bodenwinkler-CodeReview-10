@@ -42,12 +42,14 @@
     }
 
     #updateID {
-        border: solid lightgray 3px;
-        background-color: lightgray;
+        background-color:#fbf9f3;
         border-radius:30px;
         padding: 30px;
         display: flex;
         justify-content: center;
+        -webkit-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+        -moz-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+        box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
     }
 
     #buttonBox {
@@ -58,6 +60,9 @@
     #headingId {
         text-align: center;
         margin: 20px 0 20px 0;
+    }
+    hr {
+        margin:1% 15% 1% 15%;
     }
     </style>
 </head>
@@ -86,7 +91,7 @@
     <h3 id="headingId">More Information</h3>
     <hr>
     <!-- Show Otherwise Hidden Content -->
-    <div class="container mt-4" id="updateID">
+    <div class="container my-5" id="updateID">
         <div action="actions/a_update.php" method="post">
             <!-- Bootstrap Card -->
             <div class="card text-center" style="background-color:white;border-radius:10px;">
@@ -98,28 +103,32 @@
 
                 <div class="card-body">
                     <!-- Autor -->
-                    <h5 class="card-title">Author</h5>
+                    <h4 class="card-title">Author</h4>
                     <p class="card-text"><?php echo $data['author_first_name'] ?> <?php echo $data['author_last_name'] ?></p>
+                    <hr>
 
                     <!-- Publicist -->
-                    <h5 class="card-title">Publicist</h5>
+                    <h4 class="card-title">Publicist</h4>
                     <p class="card-text">Name: <?php echo $data['pub_name'] ?></p>
                     <p class="card-text">Address: <?php echo $data['pub_address'] ?></p>
                     <p class="card-text">Publication Date: <?php echo $data['pub_date'] ?></p>
                     <p class="card-text">Publication Size: <?php echo $data['pub_size'] ?></p>
+                    <hr>
 
                     <!-- Media Data -->
-                    <h5 class="card-title">About</h5>
+                    <h4 class="card-title">About</h4>
                     <p class="card-text">Title: <?php echo $data['med_title'] ?></p>
                     <p class="card-text">Type: <?php echo $data['med_type'] ?></p>
                     <p class="card-text">ISBN: <?php echo $data['isbn'] ?></p>
+                    <hr>
 
                     <!-- Description -->
-                    <h5 class="card-title">Description</h5>
-                    <p class="card-text"><?php echo $data['short_desc'] ?></p>
-                    
+                    <h4 class="card-title">Description</h4>
+                    <p class="card-text" style="margin:0 20% 0 20%"><?php echo $data['short_desc'] ?></p>
+                    <hr>
+
                     <!-- Status -->
-                    <h5 class="card-title">Status</h5>
+                    <h4 class="card-title">Status</h4>
                     <p class="card-text"><?php echo ucwords($data['med_status']) ?></p>
 
                 </div>

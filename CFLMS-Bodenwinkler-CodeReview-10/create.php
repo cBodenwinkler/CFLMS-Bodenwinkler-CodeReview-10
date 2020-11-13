@@ -25,10 +25,15 @@
     }
 
     #createID {
+        background-color: #fbf9f3;
         border: solid lightgray 3px;
+        border-radius:15px;
         padding: 30px;
         display: flex;
         justify-content: center;
+        -webkit-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+        -moz-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+        box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
     }
 
     #headingId {
@@ -59,7 +64,7 @@
     <hr>
 
     <!-- Form for User to insert Data to send it to Server ------------------------------------------->
-    <div class="container mt-4" id="createID">
+    <div class="container mt-5" id="createID">
         <form action="actions/a_create.php" method="post">
             <table>
                 <!-- Input Of Media Data -->
@@ -121,7 +126,7 @@
                 <button type="submit" class="btn btn-primary"> Send Media Data </button>
 
                 <!-- Button to Return to index.php -->
-                <a href="index.php"><button type="button" class="btn btn-secondary"> HOME </button> </a>
+                <a href="index.php"><button type="button" class="btn btn-secondary"> Home </button> </a>
             </div>
         </form>
 

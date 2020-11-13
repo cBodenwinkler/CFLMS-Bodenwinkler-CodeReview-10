@@ -18,6 +18,7 @@
         width: 150px;
         height: auto;
         max-height:150px;
+        border-radius:10px;
     }
     #logoImg {
         width: 30px;
@@ -30,10 +31,19 @@
         margin-left:auto;
         margin-right:auto;
     }
+    th{
+        font-size:1.2rem;
+        background-color: #343A40;
+        color:white;
+    }
     table, th, td {
-        border: solid black 1px;
+        border: solid lightgray 1px;
         padding: 5px;
         min-width:80px;
+    }
+    td{
+        height:250px;
+        background-color:#fbf9f3;
     }
     #createButton {
         width:350px;
@@ -46,6 +56,14 @@
     }
     td {
         padding: 10px;
+    }
+    table {
+        -webkit-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+        -moz-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+        box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+    }
+    .editBtn {
+        width:120px;
     }
     </style>
 </head>
@@ -102,9 +120,9 @@
                                         <td>" .$row['pub_name']. "</td>
                                         <td>" .$row['med_type']. "</td>
                                         <td>
-                                            <a href='update.php?id=" .$row['id']."'><button class='btn btn-secondary' type='button'>Edit</button></a>
-                                            <a href='delete.php?id=" .$row['id']."'><button class='btn btn-danger' type='button'>Delete</button></a>
-                                            <a href='show.php?id=" .$row['id']."'><button class='btn btn-primary' type='button'>Show Media</button></a>
+                                            <a href='update.php?id=" .$row['id']."'><button class='btn btn-secondary my-1 editBtn' type='button'>Edit</button></a><br>
+                                            <a href='delete.php?id=" .$row['id']."'><button class='btn btn-danger my-1 editBtn' type='button'>Delete</button></a><br>
+                                            <a href='show.php?id=" .$row['id']."'><button class='btn btn-primary my-1 editBtn' type='button'>Show Media</button></a><br>
                                         </td>
                                     </tr>";
                         }

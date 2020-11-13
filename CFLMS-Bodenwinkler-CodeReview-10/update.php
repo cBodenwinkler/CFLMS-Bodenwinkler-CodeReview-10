@@ -42,6 +42,11 @@
             padding: 30px;
             display:flex;
             justify-content:center;
+            background-color:#fbf9f3;
+            border-radius:15px;
+            -webkit-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+            -moz-box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
+            box-shadow: 0px 0px 20px 21px rgba(0,0,0,0.14);
         }
         #buttonBox {
             display:flex;
@@ -74,7 +79,7 @@
     <h3 id="headingId">Update Chosen Entry</h3>
     <hr>
     <!-- Show given Content - Set it into right inputBoxes for editing -->
-    <div class="container mt-4" id="updateID">
+    <div class="container mt-5" id="updateID">
         <form action="actions/a_update.php" method="post">
             <table>
                 <tr>
