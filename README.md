@@ -10,7 +10,7 @@ Additionally there is a 'img' folder for the Logo used in the Website.
 
 #### Folder - CFLMS-Bodenwinkler-CR10-DatabaseFile:
 ```
-Contains the DB 'CR10-Bodenwinkler-BigLibrary' creation file 
+Contains the DB 'CR10-Bodenwinkler-BigLibrary.sql' creation file 
 including the table 'media' and data for 11 entries into said table.
 ```
 
