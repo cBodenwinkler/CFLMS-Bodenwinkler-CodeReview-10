@@ -105,7 +105,7 @@
         <h5>
             <?php
                 while ($row = $result->fetch_assoc()) {
-                    echo "<h1>Media published by: ".$row['pub_name']."</h1><br>";
+                    echo "<h3>Media published by: ".$row['pub_name']."</h3><br>";
                     break;
                 };
             ?>
