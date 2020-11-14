@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Update - BigLibrary</title>
+    <title>Edit - BigLibrary</title>
 
     <style>
         img {
@@ -76,7 +76,7 @@
     </header>
     
     <!-- Heading for the Update Site -->
-    <h3 id="headingId">Update Chosen Entry</h3>
+    <h3 id="headingId">Edit Entry</h3>
     <hr>
     <!-- Show given Content - Set it into right inputBoxes for editing -->
     <div class="container mt-5" id="updateID">

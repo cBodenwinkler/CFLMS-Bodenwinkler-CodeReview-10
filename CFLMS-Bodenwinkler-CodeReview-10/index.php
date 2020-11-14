@@ -33,6 +33,7 @@
     }
     th{
         font-size:1.2rem;
+        font-weight:500;
         background-color: #343A40;
         color:white;
     }
@@ -73,7 +74,7 @@
     <header>
         <ul class="nav justify-content-center bg-dark">
             <li class="nav-item py-3">
-                <a class="nav-link" href="index.php"><h4 style="color:white">Homepage</h4></a>
+                <a class="nav-link" href="index.php" style="border-bottom:solid white 2px;border-radius:5px"><h4 style="color:white">Homepage</h4></a>
             </li>
             <li class="nav-item py-3 px-3">
                 <a class="nav-link active" href="index.php"><img id="logoImg" src="img/logo.png" alt=""></a>
@@ -85,10 +86,10 @@
     </header>
 
     <!-- Forward Link to create.php to Create an Entry -->
-    <div id="createBtnDiv">
+    <div id="createBtnDiv" >
         <a href="create.php"> <button type="button" class="btn btn-secondary" id="createButton"><h4 style="font-weight:400"> Create An Entry</h4> </button> </a>
     </div>  
-    <hr>
+    <hr class="container">
 
 
     <!-- Show All Content, to-CREATE to-EDIT, to-DELETE, to-Show-SPECIFIC ----------------------------->
@@ -117,7 +118,7 @@
                                         <td><img src=" .$row['med_image']. "> </td>
                                         <td>" .$row['med_title']. "</td>
                                         <td>" .$row['author_first_name']. " ".$row['author_last_name']. "</td>
-                                        <td>" .$row['pub_name']. "</td>
+                                        <td> <a href='publisher.php?id=" .$row['pub_name']. "'>" .$row['pub_name']. "</a></td>
                                         <td>" .$row['med_type']. "</td>
                                         <td>
                                             <a href='update.php?id=" .$row['id']."'><button class='btn btn-secondary my-1 editBtn' type='button'>Edit</button></a><br>

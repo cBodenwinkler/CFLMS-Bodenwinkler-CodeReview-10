@@ -64,6 +64,14 @@
     hr {
         margin:1% 15% 1% 15%;
     }
+    #backBtn {
+        width:350px;
+        font-size:1.1rem;
+        /* border:solid lightgray 1px; */
+        -webkit-box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.14);
+        -moz-box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.14);
+        box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.14);
+    }
     </style>
 </head>
 
@@ -92,7 +100,7 @@
     <hr>
     <!-- Show Otherwise Hidden Content -->
     <div class="container my-5" id="updateID">
-        <div action="actions/a_update.php" method="post">
+        <div method="post">
             <!-- Bootstrap Card -->
             <div class="card text-center" style="background-color:white;border-radius:10px;">
 
@@ -134,7 +142,7 @@
                 </div>
 
                 <div class="card-footer text-muted">
-                <td><a href="index.php"><button class="btn btn-secondary" type="button">Back</button></a></td>
+                <td><a href="index.php"><button class="btn btn-secondary" type="button" id="backBtn">Back</button></a></td>
                 </div>
             </div>
             <td>

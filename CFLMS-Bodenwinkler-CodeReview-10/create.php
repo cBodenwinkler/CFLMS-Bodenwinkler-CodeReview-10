@@ -26,7 +26,6 @@
 
     #createID {
         background-color: #fbf9f3;
-        border: solid lightgray 3px;
         border-radius:15px;
         padding: 30px;
         display: flex;
@@ -54,14 +53,14 @@
                 <a class="nav-link active" href="index.php"><img id="logoImg" src="img/logo.png" alt=""></a>
             </li>
             <li class="nav-item py-3">
-                <a class="nav-link" href="create.php"><h4 style="color:white">Create-Entry</h4></a>
+                <a class="nav-link" href="create.php" style="border-bottom:solid white 2px;border-radius:5px"><h4 style="color:white">Create-Entry</h4></a>
             </li>
         </ul>
     </header>
 
     <!-- Heading for the Create Site -->
     <h3 id="headingId">Create Entry</h3>
-    <hr>
+    <hr class="container">
 
     <!-- Form for User to insert Data to send it to Server ------------------------------------------->
     <div class="container mt-5" id="createID">
