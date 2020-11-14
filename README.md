@@ -3,6 +3,7 @@
 #### Folder - CFLMS-Bodenwinkler-CodeReview-10:
 ```
 Contains the .php files alongside the 'actions' folder.
+This folder needs to be implemented in C:\xampp\htdocs\
 
 Additionally there is a 'img' folder for the Logo used in the Website.
 ```
